@@ -1,0 +1,32 @@
+h1 {
+    color: cadetblue;
+    font-family: "Ink Free";
+}
+
+.smallSize{
+    font-size: small;
+}
+
+label{
+    color: blue;
+    font-family: "Ink Free";
+}
+
+body {
+    background: antiquewhite url('../images/dog_.png') no-repeat fixed right;
+}
+
+#mainContainer {
+    margin-left: 30px;
+}
+
+.containerColor{
+    background: antiquewhite;
+}
+
+::placeholder {
+    font-style: italic;
+    color: gray;
+}
+
+
