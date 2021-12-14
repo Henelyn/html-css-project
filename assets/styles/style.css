@@ -13,15 +13,36 @@ label{
 }
 
 body {
-    background: antiquewhite url('../images/dog_.png') no-repeat fixed right;
+    background: antiquewhite url('../images/dog_.png') no-repeat fixed center;
 }
 
 #mainContainer {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .containerColor{
     background: antiquewhite;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.border {
+    border: solid darkcyan;
+    display: inline;
+    border-radius: 5px;
+    box-shadow: cadetblue 5px 6px;
+    padding: 5px 5px 5px 10px;
+}
+
+.font-for-details{
+    font-family: "Ink Free";
+}
+
+.text-right {
+    text-align: right;
+    position: fixed;
 }
 
 ::placeholder {

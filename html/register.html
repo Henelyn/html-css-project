@@ -9,21 +9,23 @@
 <div id="mainContainer">
     <h1>Find a playdate for your furry friend!</h1>
     <div id="instructions">
-        <h3>Let's get you started!</h3>
+        <h3 class="underline">Let's get you started!</h3>
         <p class="smallSize">It only takes a few minutes to connect :)</p>
     </div>
 
     <form id="mainForm" name="MainForm" method="post"> <!-- will add action later-->
-        <div id="dog">
-            <h3 class="">Dog's details:</h3>
+        <div>
+            <h3 class="border font-for-details">Dog's details:</h3>
+            <br/><br/>
             <label for="name"> Dog's name:</label>
+            <br/>
             <input class="containerColor" type="text" id="name" name="name" maxlength="30" placeholder="eg. Jack" required/>
 
-            <br/><br/>
+            <br/>
             <label for="age">Age:</label>
+            <br/>
             <input class="containerColor" type="number" id="age" name="age" min="5" max="50" required>
-            <!--not working as I expect, min/max doesn't work and have no arrows-->
-            <br/><br/>
+            <br/>
             <label for="male">Choose your dog's gender:</label>
             <input type="radio" id="male" name="gender" required> <img src="../assets/images/male.png" alt="male"
                                                                        width="33"
@@ -40,24 +42,29 @@
             <label for="file">Share photo of your furry friend:</label>
             <input type="file" id="file" name="file" required>
         </div>
+        <br/><br/>
         <div id="owner">
-            <h3>Owner's details:</h3>
+            <h3 class="border font-for-details">Owner's details:</h3>
+            <br/><br/>
             <label for="firstName"> First name:</label>
             <input class="containerColor" type="text" id="firstName" name="name" maxlength="30" placeholder="eg. John" required/>
             <label for="lastName"> Last name:</label>
             <input class="containerColor" type="text" id="lastName" name="lastName" maxlength="30" placeholder="eg. Doe" required/>
             <br/><br/>
             <label for="email">Email:</label>
+            <br/>
             <input class="containerColor" type="email" id="email" name="email" placeholder="eg. john.smith@mail.com" required/>
-            <label style="margin-left: 45px" for="password">Password:</label>
+            <br/>
+            <label for="password">Password:</label>
+            <br/>
             <input class="containerColor" type="password" id="password" name="password" required>
-            <br/><br/>
+            <br/>
             <label for="phoneNumber">Phone number:</label>
+            <br/>
             <input class="containerColor" type="tel" id="phoneNumber" name="phoneNumber" maxlength="15" placeholder="eg. +372 555 55555"
                    required>
-        </div>
-        <br/><br/>
-        <input type="submit" value="Sign up"/>
+        </div><br/>
+        <input class="border" type="submit" value="Sign up"/> <!--click and hover effect-->
     </form>
 </div>
 </body>
