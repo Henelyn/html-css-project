@@ -13,7 +13,7 @@ label {
 }
 
 body {
-    background: antiquewhite url('../images/dog_.png') no-repeat fixed right;
+    background: antiquewhite url('../images/dog_.png') no-repeat fixed center;
 }
 
 #mainContainer {
@@ -39,14 +39,23 @@ body {
 
 .header-text-font {
     font-size: small;
-    text-align: right;
-    margin-right: 10px;
-    top: 10px;
-    position: relative;
+    right: 30px;
+    top: 30px;
+    position: fixed;
+}
+
+.text-small {
+    font-size: small;
 }
 
 .font-for-details {
     font-family: "Ink Free";
+}
+
+.container{
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
 }
 
 header {
@@ -67,3 +76,23 @@ header {
     right: 10px;
 }
 
+.submit-button :hover {
+    font-family: "Ink Free";
+    cursor:pointer;
+    background: burlywood;
+    transition: 0.3s;
+}
+
+.buttons-class{
+    background-color: lightpink;
+    border: 2px solid plum; /* Plum border */
+    color: white; /* White text */
+    padding:0px 20px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 20%; /* Set a width if needed */
+    display: inline-grid
+}
+
+.buttons-class button:hover {
+    background-color: antiquewhite;
+}

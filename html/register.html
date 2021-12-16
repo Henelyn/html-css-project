@@ -7,11 +7,12 @@
 </head>
 <body>
 <header>
-    <div>
-        <p class="header-text-font">That's my "doesn't fit here fixed header", with some bottom right corner text in container.</p>
-    </div>
+    <p class="text-small">That's my "doesn't fit here fixed header"</p>
     <img class="paw-icon" src="../assets/images/paw.png" width="20" height="20" alt="paw icon">
 </header>
+<div>
+    <p class="header-text-font">That's some bottom right corner text in container.</p>
+</div>
 <div id="mainContainer">
     <h1>Find a <span style="color:blue">playdate</span> for your furry friend!</h1>
     <div id="instructions">
@@ -19,8 +20,8 @@
         <p class="smallSize">It only takes a few minutes to connect :)</p>
     </div>
 
-    <form id="mainForm" name="MainForm" method="post"> <!-- will add action later-->
-        <div>
+    <form id="mainForm" name="MainForm" method="post" action="link-for-register.html">
+        <div class="container">
             <h3 class="border font-for-details">Dog's details:</h3>
             <br/><br/>
             <label for="name"> Dog's name:</label>
@@ -48,8 +49,7 @@
             <label for="file">Share photo of your furry friend:</label>
             <input type="file" id="file" name="file" required>
         </div>
-        <br/><br/>
-        <div id="owner">
+        <div class="container">
             <h3 class="border font-for-details">Owner's details:</h3>
             <br/><br/>
             <label for="firstName"> First name:</label>
@@ -69,9 +69,19 @@
             <br/>
             <input class="containerColor" type="tel" id="phoneNumber" name="phoneNumber" maxlength="15" placeholder="eg. +372 555 55555"
                    required>
-        </div><br/>
+        </div>
+        <div class="submit-button">
         <input class="border" type="submit" value="Sign up"/> <!--click and hover effect-->
+        </div>
     </form>
+    <br/>
+    <div class="buttons-class">
+        <h3>List of buttons:</h3>
+        <button><a href="link-for-puppies.html">Puppies</a></button>
+        <button><a href="link-for-owners.html">Owners</a></button>
+        <button><a href="link-for-other-pets.html">Other pets</a></button>
+    </div>
+
 </div>
 </body>
 </html>
